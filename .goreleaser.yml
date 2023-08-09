@@ -19,7 +19,7 @@ builds:
     goarm:
       - 6
       - 7
-    main: ./main.go
+    main: ./main/main.go
 archives:
   - name_template: '{{ .ProjectName }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}{{ if .Mips }}-{{ .Mips }}{{ end }}'
     format_overrides:
